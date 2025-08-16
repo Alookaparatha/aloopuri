@@ -1,4 +1,4 @@
-       <?php
+   <?php
 
        $host = "sql303.ezyro.com";
        $user = "ezyro_39718623";
@@ -6,9 +6,10 @@
        $db = "ezyro_39718623_login"
 
         $con = mysqli_connect($host , $user, $pass, $db );
-
+         
         if (!$con) {
-            die("Connection Failed: " . mysqli_connect_error());
+         die("Connection Failed: " . mysqli_connect_error());
+               echo ="failed";
         }
         if (isset($_POST['submit'])) {
 
@@ -32,3 +33,4 @@
 
 
         ?>
+
