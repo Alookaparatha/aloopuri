@@ -1,6 +1,6 @@
        <?php
 
-       $host = "sql303.byetcluster.com";
+       $host = "sql303.ezyro.com";
        $user = "ezyro_39718623";
        $pass = "012f9a8f90";
        $db = "ezyro_39718623_login"
@@ -28,6 +28,7 @@
 }
 
         mysqli_close($con);
+
 
 
         ?>
