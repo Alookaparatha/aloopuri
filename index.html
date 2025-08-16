@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Travel India</title>
+    
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+.container{
+    max-width: 80%;
+    padding: 34px;
+    margin: auto;
+}
+.container h1 , p{
+    font-family: Sriracha;
+    text-align: center;
+}
+h1{
+    font-size: 30px;
+}
+p{
+    font-size: 17px;
+}
+input, textarea{
+    border: 2px solid black;
+    outline: none;
+    width: 80%;
+    margin: 11px auto;
+    padding: 7px;
+    font-size: 15px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    color: #ffff;
+    background: black;
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 15px;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.submit_msg {
+    color: rgb(128, 74, 221);
+}
+</style>
+<body>
+    <div class="container">
+        <h1>Welcome to IIT  Delhi Japan Trip</h1>
+        <p>Enter your details correctly here to regester the trip </p>
+        <p class="submit_msg">Thanks for submtting form . We are happy to see you joining for this trip to JAPAN </p>
+        <form action="connect.php" method="post">
+            <input type="text" name="name" id="name" placeholder="Enter your name here">
+            <input type="text" name="age" id="age" placeholder="Enter your age">
+            <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+            <input type="email" name="email" id="email" placeholder="Enter your Email">
+            <input type="tel" name="phone" id="phone"
+            placeholder="Enter your phone number">
+            <textarea name="other" id="other" cols="20" rows="7" placeholder="Enter any other information"></textarea>
+            <button class="btn" name="submit">Submit</button>
+            
+
+        </form>
+                      
+
+ 
+    </div>
+</body>
+</html>
